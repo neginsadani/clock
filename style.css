@@ -1,0 +1,118 @@
+/* :root{
+    
+} */
+
+/* general styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "clock_font";
+}
+/* font */
+@font-face {
+    font-family: "clock_font";
+    src: url(./assets/font/E1234-p7pER.ttf);
+}
+/* body */
+/* first desktop size width : 1980px++ */
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    color: rgb(22, 255, 22);
+}
+/* main */
+.main{
+    width: 100%;
+    height: 100%;
+    padding: 5vw 5vh;
+}
+/* time-area */
+.time-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+/* time-area-container */
+.time-area-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+}
+/* time-container */
+.time-container{
+    font-size: 6rem; 
+}
+/* hour */
+#hour{
+    text-align: left;
+}
+/* minute */
+#minute{
+    text-align: center;
+}
+/* second */
+#second{
+    text-align: right;
+}
+
+/* Responsive */
+
+/* min-77px max-1024px */
+@media screen and (min-width : 777px) and (max-width : 1024px) {
+    /* time-area-container */
+    .time-area-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+    /* time-container */
+    .time-container{
+        font-size: 4rem; 
+    }
+}
+/* min-521px max-776px*/
+@media screen and (min-width : 521px) and (max-width : 776px) {
+    /* time-area-container */
+    .time-area-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    /* time-container */
+    .time-container{
+        font-size: 3rem; 
+    }
+}
+
+/* min-401px max-520px */
+@media screen and (min-width : 401px) and (max-width : 520px) {
+    /* time-area-container */
+    .time-area-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    /* time-container */
+    .time-container{
+        font-size: 2.5rem; 
+    }
+}
+
+/* max-400px */
+@media screen and (max-width : 400px){
+    /* time-area-container */
+    .time-area-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    /* time-container */
+    .time-container{
+        font-size: 2rem; 
+    }
+}
